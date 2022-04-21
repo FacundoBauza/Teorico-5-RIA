@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--FONT AWESOME-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+              integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <!-- BOOTSTRAP-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- GOOGLE FONT-->
+        <link href="https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/css/css.css">
+        
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>VIDEOS-URU</title>
+        <style>
+            body{
+                background-color: cian;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <header>
+            <nav class="navbar navbar-light bg-light ">
+                <img class="logo" src="./logo.png">
+                <form class="form-inline mx-auto" method="POST" action="BusVideos">
+                    <input name="TextoFiltro" class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">buscar</button>
+                    <select class="btn btn-outline-success my-2 my-sm-0" name="ComboOpciones" id="ComboCatego" style='margin: 4px; width:150px; height:40px'>
+                        <option value="SinFiltro">Sin Filtro</option>
+                        <option value="Categoria">Categoría</option>
+                        <option value="ListReproduccion">Lista de Reproducción</option>
+                        <option value="Canal">Canal</option>
+                    </select>
+                </form>     
+            </nav>   
+        </header>
+
+        <!--  menu-->
+        <div class="menu">
+			 <div class="card" style="float:left; width: 18rem;">
+                <ul class="list-group list-group-flush">
+					<img class="logo" src="./perfil.png">
+                    <li class="list-group-item"><a href="#" role="button">Control de Monetisación</a></li>  
+                    <li class="list-group-item"><a href="#" role="button">Estadisticas de Visualización</a></li>
+                    <li class="list-group-item"><a href="#" role="button">Historial</a></li>
+                    <li class="list-group-item"><a href="#" role="button">Videos Guardados</a></li>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+                    <li class="list-group-item"><a href="#" role="button">Configuración</a></li>
+                </ul>
+            </div>
+        </div>
+		
+		<div id="capsulaVid" align="center" style="float:left; width: 60rem; margin: 40px">
+			<ul class="list-group list-group-flush">
+				<li style=" border: solid black; background-color: white;">
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+					<div style="border: solid; margin: 25px; width: 200px; height: 150px; float: left;"></div>
+				</li>
+				<br>
+			</ul>
+		</div>    
+        
+        <footer>
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        </footer>    
+    </body>
+</html>
